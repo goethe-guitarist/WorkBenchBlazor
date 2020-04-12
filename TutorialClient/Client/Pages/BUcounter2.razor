@@ -1,0 +1,15 @@
+﻿@page "/BUcounter2"
+@* https://blazor-university.com/overview/creating-a-page/ *@
+
+<h3>BUcounter</h3>
+<p>The counter value is @counter</p>
+<button class="btn btn-primary" @onclick=IncrementCounter>Increment counter</button>
+
+@code {
+    private int counter = 1;
+
+    private void IncrementCounter()
+    {
+        counter++;
+    }
+}
